@@ -9,12 +9,6 @@ Develop a Recurrent Neural Network model for stock price prediction using the st
 
 Here we have taken the price of google stock dataset
 
-
-## Neural Network Model
-
-![image](https://github.com/S-ABHISHEK-1905/rnn-stock-price-prediction/assets/66360846/666f7db0-22a1-414d-81df-ab8ea1fb392a)
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -102,8 +96,8 @@ inputs_scaled=sc.transform(inputs)
 X_test = []
 for i in range(60,1384):
     X_test.append(inputs_scaled[i-60:i,0])
-    X_test = np.array(X_test)
-    X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
+X_test = np.array(X_test)
+X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
 X_test.shape
 
 predicted_stock_price_scaled = model.predict(X_test)
@@ -121,12 +115,13 @@ plt.show()
 ## OUTPUT
 
 ### True Stock Price, Predicted Stock Price vs time
+![image](https://github.com/S-ABHISHEK-1905/rnn-stock-price-prediction/assets/66360846/ff613d35-510e-4a2a-abed-e79fb24a44ab)
 
 
 ![In](3.png)
 ### Mean Square Error
+![image](https://github.com/S-ABHISHEK-1905/rnn-stock-price-prediction/assets/66360846/5c1d1f0b-b216-435c-ba43-abcf3fe32655)
 
-![In](2.png)
 ## RESULT
 Thus, we have successfully created a Simple RNN model for Stock Price Prediction.
 
