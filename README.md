@@ -118,7 +118,6 @@ plt.show()
 ![image](https://github.com/S-ABHISHEK-1905/rnn-stock-price-prediction/assets/66360846/ff613d35-510e-4a2a-abed-e79fb24a44ab)
 
 
-![In](3.png)
 ### Mean Square Error
 ![image](https://github.com/S-ABHISHEK-1905/rnn-stock-price-prediction/assets/66360846/5c1d1f0b-b216-435c-ba43-abcf3fe32655)
 
